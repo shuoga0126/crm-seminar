@@ -1,12 +1,12 @@
 このプロジェクト専用のSkillsを作成します。
-.claude/commands/ フォルダにファイルを置くと、そのファイル名が /コマンド名 として使えるようになります。
+.claude/skills/ フォルダにサブフォルダを作り、その中にSKILL.mdを置くと、フォルダ名が /コマンド名 として使えるようになります。
 ここに作ると、GitでCloneした全員が同じSkillsを使えます。
 
 以下の2つのファイルを作成してください。
 
 ---
 
-ファイル1: .claude/commands/review.md
+ファイル1: .claude/skills/review/SKILL.md
 内容：
 まず git diff --name-only を実行して変更されたファイルを特定してください。
 
@@ -26,7 +26,7 @@ $ARGUMENTS でファイルが指定されている場合はそのファイルを
 
 ---
 
-ファイル2: .claude/commands/pr.md
+ファイル2: .claude/skills/pr/SKILL.md
 内容：
 git diff main を実行して現在の変更内容を確認し、
 GitHubのPull Request説明文を日本語で作成してください。
